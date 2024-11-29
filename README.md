@@ -1,1 +1,1 @@
-# 21 tiny javascript web apps for training
+# 14 tiny javascript web apps for training
