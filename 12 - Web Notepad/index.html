@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Web Notepad</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<header class="container">
+			<h1>Webpad</h1>
+			<p>Notepad for the web.</p>
+		</header>
+
+		<main class="container">
+			<div id="notesContainer" class="grid"></div>
+			<button class="fab" id="addNote">+</button>
+
+			<div id="noteModal" class="noteview" data-active-note=" ">
+				<div class="noteview__content">
+					<div class="noteview__header">
+						<input id="noteModalTitle" class="noteview__title" value="title" type="text">
+						<div class="noteview__tools">
+							<span id="noteModalDelete">🗑</span>
+							<span id="noteModalClose" class="close">&times;</span>
+						</div>
+					</div>
+					<textarea id="noteModalText" class="noteview__text" placeholder="enter something..."></textarea>
+					<p id="noteModalFooter"></p>
+				</div>
+			</div>
+		</main>
+
+		<footer class="container">
+			<p>Made by Kevin</p>
+		</footer>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unit Converter</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>USA to Universal Units Converter</h1>
+		</header>
+
+		<main>
+			<div class="container">
+				
+				<form id="converter-form">
+				  <label for="input-value">Enter Value:</label>
+				  <input type="number" id="input-value" placeholder="Enter value" required>
+			
+				  <label for="unit-type">Select Unit:</label>
+				  <select id="unit-type">
+					<option value="inches">Inches to Meters</option>
+					<option value="pounds">Pounds to Kilograms</option>
+					<option value="gallons">Gallons to Liters</option>
+				  </select>
+			
+				  <button type="submit">Convert</button>
+				</form>
+			
+				<div id="result">
+				  <p>Converted Value: <span id="converted-value">N/A</span></p>
+				</div>
+			  </div>
+		</main>
+
+		<footer>
+			<p>Made by Kevin.</p>
+		</footer>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #282c34;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+	padding-block: 1rem;
+	text-align: center;
+  color: white;
+}
+
+.title {
+  font-family: "Carter One", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+  background-color: #444;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.number {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.number-12 {
+  top: 1rem;
+  left: 50%;
+}
+
+.number-3 {
+  top: 50%;
+  right: 0;
+}
+
+.number-6 {
+  bottom: 0;
+  left: 50%;
+}
+
+.number-9 {
+  top: 50%;
+  left: 1rem;
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.1s cubic-bezier(0.4, 2.3, 0.3, 1);
+  border-radius: 2px;
+}
+
+.hand.hour {
+  height: 8px;
+  background-color: #f39c12;
+}
+
+.hand.minute {
+  height: 6px;
+  background-color: #ecf0f1;
+}
+
+.hand.second {
+  height: 4px;
+  background-color: #e74c3c;
+}
